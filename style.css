@@ -2336,6 +2336,12 @@ section h2 {
     margin-top: 0;
     margin-bottom: 10px;
     color: #333;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: calc(1.3em * 2);
 }
 
 .product-description {
@@ -2343,6 +2349,11 @@ section h2 {
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: calc(1.4em * 3);
 }
 
 .product-price {
