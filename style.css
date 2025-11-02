@@ -2215,6 +2215,9 @@ section h2 {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -2240,6 +2243,9 @@ section h2 {
 
 .product-info {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 /* Badges y resaltado por interés */
@@ -2264,6 +2270,23 @@ section h2 {
 .product-card.interest-highlight {
     box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.5), 0 10px 24px rgba(0,0,0,0.2);
     transform: translateY(-2px);
+}
+
+/* Alinear contenido en tarjetas de interés/discount */
+.discount-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.discount-card .product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.discount-card .add-to-cart-btn {
+    margin-top: auto;
 }
 
 /* Botón flotante: Volver arriba */
@@ -2339,6 +2362,7 @@ section h2 {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-top: auto; /* empujar el botón al fondo de la tarjeta */
 }
 
 .add-to-cart-btn:hover {
